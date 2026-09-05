@@ -1,4 +1,4 @@
-# Main Application Entry
+# Community 1
 
 > 1 nodes · cohesion 1.00
 

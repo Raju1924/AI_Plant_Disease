@@ -1,11 +1,10 @@
-# Hugging Face Query Logic
+# Community 2
 
-> 2 nodes · cohesion 1.00
+> 1 nodes · cohesion 1.00
 
 ## Key Concepts
 
-- **Hugging_face.py** (1 connections) — `Hugging_face.py`
-- **query()** (1 connections) — `Hugging_face.py`
+- **test_hf.py** (0 connections) — `test_hf.py`
 
 ## Relationships
 
@@ -13,11 +12,11 @@
 
 ## Source Files
 
-- `Hugging_face.py`
+- `test_hf.py`
 
 ## Audit Trail
 
-- EXTRACTED: 1 (100%)
+- EXTRACTED: 0 (0%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 
