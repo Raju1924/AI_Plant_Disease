@@ -1,0 +1,275 @@
+{
+  "directed": false,
+  "multigraph": false,
+  "graph": {
+    "hyperedges": [
+      {
+        "id": "requirements_dependency_stack",
+        "label": "Machine Learning Application Stack",
+        "nodes": [
+          "requirements_streamlit",
+          "requirements_transformers",
+          "requirements_torch",
+          "requirements_huggingface_hub",
+          "requirements_requests",
+          "requirements_pillow",
+          "requirements_numpy"
+        ],
+        "relation": "form",
+        "confidence": "INFERRED",
+        "confidence_score": 0.9,
+        "source_file": "requirements.txt"
+      }
+    ]
+  },
+  "nodes": [
+    {
+      "id": "hugging_face_query",
+      "label": "query()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 1,
+      "file_type": "code",
+      "norm_label": "query()",
+      "source_file": "Hugging_face.py",
+      "source_location": "L11"
+    },
+    {
+      "id": "hugging_face",
+      "label": "Hugging_face.py",
+      "_origin": "ast",
+      "community": 1,
+      "file_type": "code",
+      "norm_label": "hugging_face.py",
+      "source_file": "Hugging_face.py",
+      "source_location": "L1"
+    },
+    {
+      "id": "app",
+      "label": "app.py",
+      "_origin": "ast",
+      "community": 2,
+      "file_type": "code",
+      "norm_label": "app.py",
+      "source_file": "app.py",
+      "source_location": "L1"
+    },
+    {
+      "id": "test_hf",
+      "label": "test_hf.py",
+      "_origin": "ast",
+      "community": 3,
+      "file_type": "code",
+      "norm_label": "test_hf.py",
+      "source_file": "test_hf.py",
+      "source_location": "L1"
+    },
+    {
+      "id": "requirements",
+      "label": "requirements.txt",
+      "author": null,
+      "captured_at": null,
+      "community": 0,
+      "contributor": null,
+      "file_type": "code",
+      "norm_label": "requirements.txt",
+      "source_file": "requirements.txt",
+      "source_location": null,
+      "source_url": null,
+      "verification": "unverified"
+    },
+    {
+      "id": "requirements_huggingface_hub",
+      "label": "Hugging Face Hub",
+      "author": null,
+      "captured_at": null,
+      "community": 0,
+      "contributor": null,
+      "file_type": "code",
+      "norm_label": "hugging face hub",
+      "source_file": "requirements.txt",
+      "source_location": null,
+      "source_url": null
+    },
+    {
+      "id": "requirements_numpy",
+      "label": "NumPy",
+      "author": null,
+      "captured_at": null,
+      "community": 0,
+      "contributor": null,
+      "file_type": "code",
+      "norm_label": "numpy",
+      "source_file": "requirements.txt",
+      "source_location": null,
+      "source_url": null
+    },
+    {
+      "id": "requirements_pillow",
+      "label": "Pillow",
+      "author": null,
+      "captured_at": null,
+      "community": 0,
+      "contributor": null,
+      "file_type": "code",
+      "norm_label": "pillow",
+      "source_file": "requirements.txt",
+      "source_location": null,
+      "source_url": null
+    },
+    {
+      "id": "requirements_requests",
+      "label": "Requests",
+      "author": null,
+      "captured_at": null,
+      "community": 0,
+      "contributor": null,
+      "file_type": "code",
+      "norm_label": "requests",
+      "source_file": "requirements.txt",
+      "source_location": null,
+      "source_url": null
+    },
+    {
+      "id": "requirements_streamlit",
+      "label": "Streamlit",
+      "author": null,
+      "captured_at": null,
+      "community": 0,
+      "contributor": null,
+      "file_type": "code",
+      "norm_label": "streamlit",
+      "source_file": "requirements.txt",
+      "source_location": null,
+      "source_url": null
+    },
+    {
+      "id": "requirements_torch",
+      "label": "Torch",
+      "author": null,
+      "captured_at": null,
+      "community": 0,
+      "contributor": null,
+      "file_type": "code",
+      "norm_label": "torch",
+      "source_file": "requirements.txt",
+      "source_location": null,
+      "source_url": null
+    },
+    {
+      "id": "requirements_transformers",
+      "label": "Transformers",
+      "author": null,
+      "captured_at": null,
+      "community": 0,
+      "contributor": null,
+      "file_type": "code",
+      "norm_label": "transformers",
+      "source_file": "requirements.txt",
+      "source_location": null,
+      "source_url": null
+    }
+  ],
+  "links": [
+    {
+      "source": "hugging_face",
+      "target": "hugging_face_query",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Hugging_face.py",
+      "source_location": "L11",
+      "weight": 1.0
+    },
+    {
+      "source": "requirements",
+      "target": "requirements_huggingface_hub",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "requirements.txt",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "requirements",
+      "target": "requirements_numpy",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "requirements.txt",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "requirements",
+      "target": "requirements_pillow",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "requirements.txt",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "requirements",
+      "target": "requirements_requests",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "requirements.txt",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "requirements",
+      "target": "requirements_streamlit",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "requirements.txt",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "requirements",
+      "target": "requirements_torch",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "requirements.txt",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "requirements",
+      "target": "requirements_transformers",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "requirements.txt",
+      "source_location": null,
+      "weight": 1.0
+    }
+  ],
+  "hyperedges": [
+    {
+      "id": "requirements_dependency_stack",
+      "label": "Machine Learning Application Stack",
+      "nodes": [
+        "requirements_streamlit",
+        "requirements_transformers",
+        "requirements_torch",
+        "requirements_huggingface_hub",
+        "requirements_requests",
+        "requirements_pillow",
+        "requirements_numpy"
+      ],
+      "relation": "form",
+      "confidence": "INFERRED",
+      "confidence_score": 0.9,
+      "source_file": "requirements.txt"
+    }
+  ]
+}
